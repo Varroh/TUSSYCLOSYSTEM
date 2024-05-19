@@ -3,16 +3,19 @@ hr {
     width: 100%;
 }
 
-p {
+.navbar-sfs a {
     float: left;
     margin: 20px;
+    text-decoration: none;
 }
 
-.search-btn {
+.navbar-bs a{
     float: right;
+    margin: 20px;
+    text-decoration: none;
 }
 
-.shopping-bag-btn{
-    float: right;
+.responsive-banner1 {
+    width: 70%;
+    height: auto;
 }
-
