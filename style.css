@@ -1,0 +1,18 @@
+hr {
+    margin-top: 3%;
+    width: 100%;
+}
+
+p {
+    float: left;
+    margin: 20px;
+}
+
+.search-btn {
+    float: right;
+}
+
+.shopping-bag-btn{
+    float: right;
+}
+
