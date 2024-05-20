@@ -1,20 +1,16 @@
-let slideIndex = 0;
-showSlides(slideIndex);
+// scripts.js
+document.addEventListener('DOMContentLoaded', function() {
+    const subnavBtn = document.querySelector('.subnav-btn');
+    const subnavContent = document.querySelector('.subnav-content');
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+    subnavBtn.addEventListener('click', function() {
+        subnavContent.classList.toggle('show');
+    });
 
-function showSlides(n) {
-    const slides = document.querySelectorAll('.slide');
-    if (n >= slides.length) { 
-        slideIndex = 0; 
-    } 
-    if (n < 0) { 
-        slideIndex = slides.length - 1; 
-    }
-    for (let slide of slides) {
-        slide.style.display = 'none';
-    }
-    slides[slideIndex].style.display = 'block';
-}
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener('click', function(e) {
+        if (!subnavBtn.contains(e.target) && !subnavContent.contains(e.target)) {
+            subnavContent.classList.remove('show');
+        }
+    });
+});
