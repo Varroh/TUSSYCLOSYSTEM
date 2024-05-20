@@ -36,10 +36,10 @@ hr {
     display: none;
     left: 0;
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 92%;
     z-index: 1;
     position: absolute;
-    bottom: 826px; /* Adjust based on content height */
+    bottom: 835px; /* Adjust based on content height */
     padding-left: 148px;
   }
   
@@ -56,7 +56,7 @@ hr {
 .subnav:hover .subnav-content {
     display: block;
 }
-.navbar-sfs a {
+.navbar-sfs  a {
     float: left;
     margin: 20px;
     text-decoration: none;
